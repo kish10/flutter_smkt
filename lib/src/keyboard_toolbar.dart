@@ -11,7 +11,7 @@ class KeyboardToolbar extends StatefulWidget {
 
   const KeyboardToolbar({
     required this.child,
-    required this.toolbarViewBuilder
+    this.toolbarViewBuilder
   });
 
   static KeyboardToolbarState of(BuildContext context) {
