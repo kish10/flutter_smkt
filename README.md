@@ -1,5 +1,11 @@
 # Simple mobile toolbar for Flutter applications.
 
+TODO: Point to other keyboard libraries (keyboard_actions & math_keyboard).
+TODO: Show examples of: 
+    1. overriding toolbar & button views
+    2. Using toolbar (Ex: using Done button)
+TODO: Add gif of Keyboard Toolbar functionality.
+
 <!--
 This README describes the package. If you publish this package to pub.dev,
 this README's contents appear on the landing page for your package.
