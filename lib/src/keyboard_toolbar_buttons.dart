@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
-import 'package:flutter_simple_mobile_keyboard_toolbar/fsmkt.dart';
+import 'package:flutter_smkt/flutter_smkt.dart';
 
 
 class DoneButton extends StatelessWidget {
