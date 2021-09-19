@@ -13,7 +13,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-Simple mobile flutter keyboard toolbar for flutter (fsmkt).
+Simple mobile keyboard toolbar for flutter.
 
 Other awesome & popular flutter keyboard packages:
 - [keyboard_actions](https://pub.dev/packages/keyboard_actions)
@@ -22,10 +22,10 @@ Other awesome & popular flutter keyboard packages:
 
 Unlike [math_keyboard](https://pub.dev/packages/math_keyboard) or Casey Henson's implementation, fsmfkt like [keyboard_actions](https://pub.dev/packages/keyboard_actions), simply puts a toolbar on top of the system keyboard.
 
-If you'd like to replace the whole keyboard with your own keyboard please reference the other packages.
+If you'd like to replace the system keyboard with your own custom keyboard please reference the other packages.
 
 ----
-The name `flutter_simple_mobile_keyboard_toolbar` was chosen as a commitment device, not just for the developers, but for the broader open source community.
+The name `flutter simple mobile keyboard toolbar` was chosen as a commitment device, not just for the developers, but for the broader open source community.
 
 
 So if you can make it simpler or better or greater, please let us know! Pull requests are welcome.
@@ -43,11 +43,11 @@ flutter_simple_mobile_keyboard_toolbar:
 
 ### Set up
 
-Wrap the main app widget (or the widget that needs the toolbar) with the `KeyboardToolbar` widget. However `KeyboaardToolbar` relies on `MediaQuery` so need to make sure a global platform widget such as `MaterialApp`, `CupertinoApp`, `PlatformApp` is an ancestor of `KeyboardToolbar`.
+Wrap the main app widget (or the widget that needs the toolbar) with the `KeyboardToolbar` widget. However `KeyboardToolbar` relies on `MediaQuery` so need to make sure a global platform widget such as `MaterialApp`, `CupertinoApp`, or `PlatformApp` is an ancestor of `KeyboardToolbar`.
 
 ```dart
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:flutter_simple_mobile_keyboard_toolbar/fsmkt.dart';
+import 'package:flutter_smkt/flutter_smkt.dart';
 
 void main() {
   
@@ -63,11 +63,11 @@ void main() {
 
 ### Example using `DoneButton`
 
-Then for example can use the toolbar with a `DoneButton` (from fsmkt) for a multiline `TextField` widget where the system keyboard would only have a 'Newline Button' but not a 'Done' button, such as:
+Then for example can use the toolbar with a `DoneButton` (from flutter_smkt) for a multiline `TextField` widget where the system keyboard would only have a 'Newline Button' but not a 'Done' button, such as:
 
 ```dart
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:flutter_simple_mobile_keyboard_toolbar/fsmkt.dart';
+import 'package:flutter_smkt/flutter_smkt.dart';
 import 'package:flutter/widgets.dart';
 
 typedef EditOnChangedCallback = void Function(String text);
