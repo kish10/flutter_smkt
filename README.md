@@ -25,14 +25,14 @@ Unlike [math_keyboard](https://pub.dev/packages/math_keyboard) or Casey Henson's
 If you'd like to replace the whole keyboard with your own keyboard please reference the other packages.
 
 ----
-The name 'flutter_simple_mobile_keyboard_toolbar' was chosen as a commitment device, not just for the developers, but for the broader open source community.
+The name `flutter_simple_mobile_keyboard_toolbar` was chosen as a commitment device, not just for the developers, but for the broader open source community.
 
 
 So if you can make it simpler or better or greater, please let us know! Pull requests are welcome.
 
 <!-- ## Features -->
 <!-- TODO: List what your package can do. Maybe include images, gifs, or videos. -->
-
+----
 
 ## Getting started
 
