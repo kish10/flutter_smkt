@@ -1,4 +1,4 @@
-# Simple mobile toolbar for Flutter applications.
+# Simple mobile keyboard toolbar for Flutter applications.
 
 <!--
 This README describes the package. If you publish this package to pub.dev,
@@ -22,7 +22,7 @@ Other awesome & popular flutter keyboard packages:
 
 Unlike [math_keyboard](https://pub.dev/packages/math_keyboard) or Casey Henson's implementation, fsmfkt like [keyboard_actions](https://pub.dev/packages/keyboard_actions), simply puts a toolbar on top of the system keyboard.
 
-If you'd like to replace the system keyboard with your own custom keyboard please reference the other packages.
+If you would like to replace the system keyboard with your own custom keyboard please reference the other packages.
 
 ----
 The name `flutter simple mobile keyboard toolbar` was chosen as a commitment device, not just for the developers, but for the broader open source community.
