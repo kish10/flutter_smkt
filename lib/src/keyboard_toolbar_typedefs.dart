@@ -6,4 +6,4 @@ import 'package:flutter_simple_mobile_keyboard_toolbar/fsmkt.dart';
 typedef ToolbarViewBuilder = KeyboardToolbarView Function({required List<Widget> toolbarButtons});
 
 // for toolbar buttons
-typedef OnPressed = void Function();
+typedef OnToolbarButtonPressed = void Function();

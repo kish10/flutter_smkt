@@ -6,7 +6,7 @@ import 'package:flutter_simple_mobile_keyboard_toolbar/fsmkt.dart';
 
 class DoneButton extends StatelessWidget {
 
-  final OnPressed onPressed;
+  final OnToolbarButtonPressed onPressed;
 
   const DoneButton({required this.onPressed});
 
