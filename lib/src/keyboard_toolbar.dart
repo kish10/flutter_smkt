@@ -47,7 +47,7 @@ class KeyboardToolbarState extends State<KeyboardToolbar> {
     required this.toolbarViewBuilder
   });
 
-  void makeVisible({toolbarButtons}) {
+  void makeVisible({required List<Widget> toolbarButtons}) {
     setState(() {
       visible = true;
       this.toolbarButtons = toolbarButtons;
