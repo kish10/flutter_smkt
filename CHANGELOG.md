@@ -4,6 +4,10 @@
 
 ## flutter_smkt 0.0.2+ < 0.0.3
 
+## flutter_smkt 0.0.2+1
+
+Minor changes to the README.
+
 ## flutter_smkt 0.0.2
 
 Exposed `toolbarHeight` stream to be called as `KeyboardToolbar.of(context).toolbarHeight`.

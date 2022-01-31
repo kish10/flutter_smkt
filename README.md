@@ -290,7 +290,7 @@ Please let us know if you can fix this.
 
 ##### `TextField` actually hidden below the virtual keyboard not the toolbar.
 
-First if the `TextField` is hidden below the virtual keyboard without the toolbar.
+If the `TextField` is hidden below the virtual keyboard without the toolbar.
 
 Then try:
 - Wrapping the whole view in a `Scaffold` with `resizeToAvoidBottomInset` property.
