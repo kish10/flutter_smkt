@@ -266,7 +266,7 @@ class CustomToolbarView extends KeyboardToolbarView {
 
 Where CustomToolbarView extends `KeyboardToolbarView`
 
-<a='troubleshooting' />
+<a='troubleshooting'>
 ### Troubleshooting
 
 #### `inactive InputConnection`
