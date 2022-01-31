@@ -20,7 +20,7 @@ Other awesome & popular flutter keyboard packages:
 - [math_keyboard](https://pub.dev/packages/math_keyboard)
 - Honorable mention: [Medium: Stop fighting the native iOS keypad and build a custom number pad for Flutter. -by Casey Henson](https://medium.com/@caseyahenson/stop-fighting-the-native-ios-keypad-and-build-a-custom-number-pad-for-flutter-473404d1bbd6)
 
-Unlike [math_keyboard](https://pub.dev/packages/math_keyboard) or Casey Henson's implementation, fsmfkt like [keyboard_actions](https://pub.dev/packages/keyboard_actions), simply puts a toolbar on top of the system keyboard.
+Unlike [math_keyboard](https://pub.dev/packages/math_keyboard) or Casey Henson's implementation, `flutter_smkt` like [keyboard_actions](https://pub.dev/packages/keyboard_actions), simply puts a toolbar on top of the system keyboard.
 
 If you would like to replace the system keyboard with your own custom keyboard please reference the other packages.
 
@@ -35,8 +35,7 @@ So if you can make it simpler or better or greater, please let us know! Pull req
 ## Getting started
 
 ```yaml
-flutter_simple_mobile_keyboard_toolbar:
-    git: https://github.com/kish10/flutter_simple_mobile_keyboard_toolbar
+flutter_smkt: ^0.0.2
 ```
 
 ## Usage
@@ -267,7 +266,8 @@ class CustomToolbarView extends KeyboardToolbarView {
 
 Where CustomToolbarView extends `KeyboardToolbarView`
 
-### <a='troubleshooting'>Troubleshooting</a>
+<a='troubleshooting' />
+### Troubleshooting
 
 #### `inactive InputConnection`
 
