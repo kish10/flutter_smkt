@@ -61,6 +61,8 @@ void main() {
 }
 ```
 
+Reference the [Troubleshooting](#troubleshooting) section for additional debugging related information. 
+
 ### Example using `DoneButton`
 
 Then for example can use the toolbar with a `DoneButton` (from flutter_smkt) for a multiline `TextField` widget where the system keyboard would only have a 'Newline Button' but not a 'Done' button, such as:
@@ -265,7 +267,7 @@ class CustomToolbarView extends KeyboardToolbarView {
 
 Where CustomToolbarView extends `KeyboardToolbarView`
 
-### Troubleshooting
+### <a='troubleshooting'>Troubleshooting</a>
 
 #### `inactive InputConnection`
 
@@ -285,6 +287,48 @@ W/IInputConnectionWrapper(32148): endBatchEdit on inactive InputConnection
 
 Please let us know if you can fix this.
 
+#### `TextField`'s view is hidden below the toolbar's view.
+
+##### `TextField` actually hidden below the virtual keyboard not the toolbar.
+
+First if the `TextField` is hidden below the virtual keyboard without the toolbar.
+
+Then try:
+- Wrapping the whole view in a `Scaffold` with `resizeToAvoidBottomInset` property.
+- Adding a `ListView` allowing the user to scroll up.
+
+Reference:
+- [Flutter Docs - resizeToAvoidBottomInset](https://api.flutter.dev/flutter/material/Scaffold/resizeToAvoidBottomInset.html)
+- [StackOverflow - Answer to "Keyboard slides up and covers the TextField in Flutter"](https://stackoverflow.com/a/60600231)
+
+##### `TextField actually hidden by the toolbar's view.
+
+The KeyboardToolbar class exposes the `toolbarHeight` as a stream as `KeyboardToolbar.of(context).toolbarHeight`.
+
+The `toolbarHeight` stream can then be used with a `StreamBuilder` (& `ListView` or `ListView.builder`) to create additional padding, allowing the user to scroll and access the `TextField`.
+
+For example can wrap the `originalView` with the `TextField` as:
+
+```Dart
+Widget belowToolbarPadding = StreamBuilder(
+  stream: KeyboardToolbar.of(context).toolbarHeight,
+  builder: (BuildContext context, AsyncSnapshot snapshot) {
+    if (!snapshot.hasData) return Container();  
+    return Padding(padding: EdgeInsets.only(bottom: snapshot.data));
+  }
+);
+
+Widget wrappedOriginalView = ListView(
+  children: const <Widget>[
+    originalView,
+    belowToolbarPadding
+  ]
+);
+```
+
+Note: It is very necessary to provide the `Padding` separately to avoid rebuilding the `originalView` on `toolbarHeight` change.
+
+Let us know if there is a better solution.
 
 ## Additional information
 
