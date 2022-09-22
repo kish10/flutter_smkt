@@ -1,8 +1,10 @@
 # flutter_smkt <1.0.0
 
-
-
 ## flutter_smkt 0.0.2+ < 0.0.3
+
+### flutter_smkt 0.0.2+2
+
+Upgraded direct dependency package requirements
 
 ## flutter_smkt 0.0.2+1
 
